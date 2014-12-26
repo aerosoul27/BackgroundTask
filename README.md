@@ -23,8 +23,11 @@ And there is idea of the library:
 * you create ErrorHandler, where you can handle your exceptions and errors
 * after this you create «BackgroundTask» with Source, Result and Error handlers
 
-
-
 ### Features
-Library is small but gives you some cool features:
-* Handling 
+So what do you have?
+* execute BackgroundTask.handle(urlsVector) and be sure it will be handled
+* no need to recreate anything — just execute «handle» and get result
+* if your «source» made exception, BackgroundTask just will handle it later
+* you can set max attempts count and delay between them
+* you can always pause and resume your background task
+
